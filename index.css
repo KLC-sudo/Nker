@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pdi-red: #C8102E;
+  --color-pdi-dark-blue: #1a202c;
+  --color-pdi-gray: #4a5568;
+  --color-pdi-light-gray: #f7fafc;
+  
+  --font-sans: "Inter", ui-sans-serif, sans-serif;
+
+  --animate-slide-progress: slide-progress 5s linear forwards;
+
+  @keyframes slide-progress {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+}
+
+/* Ensure smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+}
